@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <title>Daniel De La Cruz | Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="logo.png" alt="logo">
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+              <ul class="nav_links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <a class="cta" href="resume.pdf" download><button class="resume">Resume</button></a>
+        </header>
+        
+        <section id="about">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <h1>Welcome, my name is Daniel De La Cruz</h1>
+                    <p>Hello! I'm a software developer whose love for coding started from building PCs and video games. I am most passionate about bringing code to life through creative problem-solving and attention to detail. Outside of coding, you can find me enjoying football, making music, and playing video games.</p>
+
+                    <h2>Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <p class="timeline-date">2022 – 2026</p>
+                            <p class="timeline-title">B.S. in Computer Science — University of The District of Columbia</p>
+                            <p class="timeline-desc">Graduated with high honors. DC-UP Scholar (Aug 2022 – May 2026), awarded for maintaining a high GPA throughout my academic career.</p>
+                        </div>
+                    </div>
+
+                    <h2>Skills</h2>
+                    <div class="skills-row">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                    </div>
+                </div>
+
+                <div class="about-photo">
+                    <img src="headshot.jpg" alt="Headshot of Daniel De La Cruz">
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <div class="container swiper">
+            <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <a href="https://github.com/Daniel-DeLaCruz908/portfolio" class="card-link" target="_blank" rel="noopener noreferrer">
+                        <img src="portfolio.png" alt="Card Image" class="card-image">
+                        <p class="badge one">Personal Portfolio</p>
+                        <h3 class="card-title">What you're currently viewing now! A website designed by me to display who I am and my talents.</h3>
+                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="https://github.com/Daniel-DeLaCruz908/dsa-visualizer" class="card-link" target="_blank" rel="noopener noreferrer">
+                        <img src="dsa.jpg" alt="Card Image" class="card-image">
+                        <p class="badge two">DSA Visualizer</p>
+                        <h3 class="card-title">A visualizer for various data structures and algorithms, built to help understand their inner workings.</h3>
+                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="https://github.com/Daniel-DeLaCruz908/spotify-match" class="card-link" target="_blank" rel="noopener noreferrer">
+                        <img src="spotify.jpg" alt="Card Image" class="card-image">
+                        <p class="badge three">Spotify Taste Match</p>
+                        <h3 class="card-title">A web app that matches users based on their Spotify music taste. Currently in development.</h3>
+                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                   <a href="https://github.com/Daniel-DeLaCruz908/stopwatch" class="card-link" target="_blank" rel="noopener noreferrer">
+                        <img src="stopwatch.png" alt="Card Image" class="card-image">
+                        <p class="badge four">Timer</p>
+                        <h3 class="card-title">A simple stopwatch timer web app built using HTML, CSS, and JavaScript!</h3>
+                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="90458f8e-52ba-4c80-ad3d-45885f33c627">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="contact-right">
+                <img src="connect.jpg" alt="Headshot of Daniel De La Cruz">
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <p>&copy; 2026 Daniel De La Cruz. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
